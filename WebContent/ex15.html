@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1>자바스크립</h1>
+	
+	<h2>함수(펑션)</h2>
+
+</body>
+
+<script type="text/javascript">
+
+	var guestbookVo = {
+		name:"유지은",
+		password:"1234",
+		content:"안녕하세요",
+		showInfo: function() {
+			console.log(this.name + "," + this.password + "," + this.content)
+		}
+	}
+	
+	console.log(guestbookVo);
+	
+	var name = guestbookVo.name;
+	console.log(name);
+	
+	var password = guestbookVo.password;
+	console.log(password);
+	
+	var content = guestbookVo.content;
+	console.log(content);
+	
+	guestbookVo.showInfo();
+	//////////////////////////////////////////////////////////////////////
+	
+	var pervonVo = {
+		name: "황일영",
+		hp: "010",
+		company: "02",
+	}
+	
+	
+	var personVo02 = {
+		name: "유재석",
+		hp: "010-9999-9999",
+		
+			
+	}
+	
+	personVo02.company="";
+	
+	
+	
+</script>
+
+</html>
