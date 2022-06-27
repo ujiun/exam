@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<script type="text/javascript" src="./jquery-1.12.4.js"></script>
+
+
 </head>
 <body>
 
@@ -20,6 +24,8 @@
 <script type="text/javascript">
 window.onload = function() {
 	
+	//자바스크립트로 이벤트 처리
+	/*
 	var testButton = document.getElementById("btn");
 	var testArea = document.getElementById("display");
 	
@@ -27,6 +33,22 @@ window.onload = function() {
 		console.log("버튼클릭");
 		testArea.innerHTML = '<font color="blue">유지은</font>';
 	};
+	*/
+	
+	//jquery 이벤트 처리
+	var testButton = $("#btn");
+	var testArea = $("#display");
+	
+	console.log(testButton);
+	
+	testButton.on("click" , function(){
+		console.log("클릭 jquery");	
+		
+		testArea.html('<font color="blue">유지은</font>');
+	});
+	
+
+	
 	
 };
 

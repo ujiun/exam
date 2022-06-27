@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+
+<style>
+	
+	input {
+		width: 207px;
+		height: 30px;
+		margin: 5px;
+		text-align: right;
+	}
+	
+	button {
+		width: 50px;
+		height: 50px;
+		margin: 5px 0px 5px 0px;
+	}
+
+</style>
+
+</head>
+<body>
+
+		<input id="display" type="text" value="">
+		<br>
+		<button id="nine" type="button">9</button>
+		<button id="eight" type="button">8</button>
+		<button id="seven" type="button">7</button>
+		<button id="divide" type="button">/</button>
+		<br>
+		<button id="six" type="button">6</button>
+		<button id="five" type="button">5</button>
+		<button id="four" type="button">4</button>
+		<button id="multiply" type="button">X</button>
+		<br>
+		<button id="three" type="button">3</button>
+		<button id="two" type="button">2</button>
+		<button id="one" type="button">1</button>
+		<button id="minus" type="button">-</button>
+		<br>
+		<button id="zero" type="button">0</button>
+		<button id="clear" type="button">C</button>
+		<button id="calculate" type="button">=</button>
+		<button id="plus" type="button">+</button>
+
+
+</body>
+
+<script type="text/javascript">
+window.onload = function() {
+	
+	var display = document.getElementById("display");
+	var nine = document.getElementById("nine");
+	var eight = document.getElementById("eight");
+	var seven = document.getElementById("seven");
+	var divide = document.getElementById("divide");
+	
+	var six = document.getElementById("six");
+	var five = document.getElementById("five");
+	var four = document.getElementById("four");
+	var multiply = document.getElementById("multiply");
+	
+	var three = document.getElementById("three");
+	var two = document.getElementById("two");
+	var one = document.getElementById("one");
+	var minus = document.getElementById("minus");
+	
+	var zero = document.getElementById("zero");
+	var clear = document.getElementById("clear");
+	var calculate = document.getElementById("calculate");
+	var plus = document.getElementById("plus");
+	
+
+	
+	plus.onclick = function() {
+		console.log("더하기");
+		
+	};
+};
+
+
+
+</script>
+
+</html>

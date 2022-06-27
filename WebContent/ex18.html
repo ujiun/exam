@@ -6,9 +6,9 @@
 </head>
 <body>
 
-	<input id="Left" type="text" value=""> + <input id="right" type="text" value=""><br>
+	<input id="Left" class="red" type="text" value=""> + <input id="right" type="text" value=""><br>
 	
-	<button id="btnPlus" type="button">더하기</button>
+	<button id="btnPlus" class="red" type="button">더하기</button>
 	
 	<p id="display">13</p>
 	
@@ -17,7 +17,20 @@
 <script type="text/javascript">
 window.onload = function() {
 	
-	var btnPlus = document.getElementById("btnPlus");
+	var btn = document.getElementsByTagName("button");	//태그네임
+	console.log(btn);
+	
+	var inputs = document.getElementsByTagName("input");  //태그네임
+	
+	console.log(inputs);
+	console.log(inputs[0]);
+	console.log(inputs[1]);
+	
+	var tags = document.getElementsByClassName("red");	//클래스네임
+	
+	
+	
+	var btnPlus = document.getElementById("btnPlus");	//아이디
 	var left = document.getElementById("Left");
 	var right = document.getElementById("right");
 	var display = document.getElementById("display");
@@ -36,6 +49,7 @@ window.onload = function() {
 	};
 	
 };
+
 
 
 </script>
